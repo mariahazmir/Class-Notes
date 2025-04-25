@@ -45,6 +45,7 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-family: 'Space Mono', monospace;
       font-size: 1.1rem;
       transition: all 0.3s ease-in-out;
     }
@@ -101,9 +102,9 @@
   <h1>Mari's Class Notes</h1>
   
   <div style="text-align: center; margin-bottom: 20px;">
-    <a href="index.html" style="color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 1rem; background: #1e1e1e; padding: 8px 16px; border-radius: 8px; border: 1px solid #ffcc00; display: inline-block;">
+    <a id="homeButton" href="index.html" style="display: none; color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 1rem; font-family: 'Space Mono', monospace; background: #1e1e1e; padding: 8px 16px; border-radius: 8px; border: 1px solid #ffcc00; display: inline-block;">
         ⬅️ Home
-    </a>
+    </a>      
   </div>
 
   <!-- Landing Page -->
@@ -141,11 +142,11 @@
     <div class="semester">
       <h3>Spring Sem 🌸</h3>
       <ul>
-        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF015 Applications of Electromagnetism.pdf" target="_blank">ENGFF015 Applications of Electromagnetism 🔄🧲</a></li>
-        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF040(1) Advanced Calculus_ Further Calculus.pdf" target="_blank">ENGFF040 Advanced Calculus - Further Calculus 🧩🧠</a></li>
-        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF040(2) Advanced Calculus_ Complex Numbers Numerical Solutions.pdf" target="_blank">ENGFF040 Complex Numbers & Numerical Solutions 🔢➗</a></li>
-        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF041(1) Thermal Physics.pdf" target="_blank">ENGFF041 Thermal Physics 🌡️🔥</a></li>
-        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF041(2) Circular Motion.pdf" target="_blank">ENGFF041 Circular Motion 🌀⚙️</a></li>        
+        <li><a href="pdfs/Foundation in Engineering 24-25/2 Spring Semester/ENGFF015 Applications of Electromagnetism.pdf" target="_blank">ENGFF015 Applications of Electromagnetism 🔄🧲</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/2 Spring Semester/ENGFF040(1) Advanced Calculus_ Further Calculus.pdf" target="_blank">ENGFF040 Advanced Calculus - Further Calculus 🧩🧠</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/2 Spring Semester/ENGFF040(2) Advanced Calculus_ Complex Numbers Numerical Solutions.pdf" target="_blank">ENGFF040 Complex Numbers & Numerical Solutions 🔢➗</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/2 Spring Semester/ENGFF041(1) Thermal Physics.pdf" target="_blank">ENGFF041 Thermal Physics 🌡️🔥</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/2 Spring Semester/ENGFF041(2) Circular Motion.pdf" target="_blank">ENGFF041 Circular Motion 🌀⚙️</a></li>        
       </ul>
     </div>
   </div>
@@ -177,9 +178,11 @@
     function showYear(yearId) {
       document.getElementById("landing").style.display = "none";
       document.getElementById(yearId).style.display = "block";
+      document.getElementById("homeButton").style.display = "inline-block";
       window.scrollTo(0, 0);
     }
   </script>
+  
 
 </body>
 </html>
