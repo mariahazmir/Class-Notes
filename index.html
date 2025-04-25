@@ -1,106 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mari's School Archive</title>
-    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
-    <style>
-        body { 
-            font-family: 'Space Mono'; 
-            line-height: 1.6; 
-            padding: 20px; 
-            max-width: 900px; 
-            margin: auto; 
-            background-color: #121212; 
-            color: #e0e0e0; 
-        }
-        h1 {
-            color: #f39c12;
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #ffcc00;
-            text-align: center;
-            border-bottom: 2px solid #ffcc00;
-            padding-bottom: 5px;
-        }
-        h3 {
-            color: #ffa500;
-            text-align: center;
-            margin-top: 15px;
-        }
-        .container {
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-        }
-        .semester {
-            margin-bottom: 20px;
-            padding: 15px;
-            background: #2c2c2c;
-            border-radius: 8px;
-            transition: all 0.3s ease-in-out;
-        }
-        .semester:hover {
-            background: #3a3a3a;
-        }
-        ul {
-            list-style-type: none; 
-            padding: 0;
-        }
-        li {
-            margin: 8px 0;
-            padding: 10px;
-            text-align: center;        
-            background: #252525;
-            border-radius: 5px;
-            transition: transform 0.2s ease-in-out;
-        }
-        li:hover {
-            transform: scale(1.05);
-            background: #333333;
-        }
-        a {
-            text-decoration: none; 
-            color: #3498db;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        a:hover {
-            color: #ffcc00;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mari's School Archive</title>
+  <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+  <style>
+    body {
+      font-family: 'Space Mono', monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    h1 {
+      color: #f39c12;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #ffcc00;
+      margin-top: 30px;
+    }
+    h3 {
+      color: #ffa500;
+      margin-top: 20px;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      background-color: #2c2c2c;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #3a3a3a;
+      transform: scale(1.05);
+    }
+    .container {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      display: none;
+    }
+    .semester {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #2c2c2c;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+    .semester:hover {
+      background: #3a3a3a;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 8px 0;
+      padding: 10px;
+      text-align: center;
+      background: #252525;
+      border-radius: 5px;
+      transition: transform 0.2s ease-in-out;
+    }
+    li:hover {
+      transform: scale(1.05);
+      background: #333333;
+    }
+    a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    a:hover {
+      color: #ffcc00;
+    }
+  </style>
 </head>
 <body>
-    <h1>Mari's Class Notes</h1>
-    
-    <div class="year">
-        <h2>FiE 2024/2025 📐</h2>
-        
-        <div class="semester">
-            <h3>April Sem 🌷</h3>
-            <ul>
-                <li><a href="pdfs\Foundation in Engineering 24-25\0 April Semester\ENGFF018 Light, Wave & Electrons.pdf" target="_blank">ENGFF018 Light, Wave & Electrons 🌊💡⚡</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\0 April Semester\ENGFF020 Principles of Chemistry.pdf" target="_blank">ENGFF020 Principles of Chemistry 🧪🧬</a></li>
-            </ul>
-        </div>
-        
-        <div class="semester">
-            <h3>Autumn Sem 🍁</h3>
-            <ul>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF013 Electricity and Magnetism.pdf" target="_blank">ENGFF013 Electricity and Magnetism ⚡🧲</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF033 Calculus.pdf" target="_blank">ENGFF033 Calculus ∫📐</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF046(1) Mechanics and Matter.pdf" target="_blank">ENGFF046 Mechanics ⚙️🚀</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF046(2) Mechanics and Matter.pdf" target="_blank">ENGFF046 Matter 🔬🌡️</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF047(1) Mathematics for Engineers.pdf" target="_blank">ENGFF047 Mathematics for Engineers I 📊📈</a></li>
-                <li><a href="pdfs\Foundation in Engineering 24-25\1 Autumn Semester\ENGFF047(2) Mathematics for Engineers.pdf" target="_blank">ENGFF047 Mathematics for Engineers II ➗📏</a></li>
-            </ul>
-        </div>
+
+  <h1>Mari's Class Notes</h1>
+
+  <!-- Landing Page -->
+  <div class="button-container" id="landing">
+    <button class="btn" onclick="showYear('foundation')">FiE 🎓</button>
+    <button class="btn" onclick="showYear('first')">CSAI Year 1 📘</button>
+    <button class="btn" onclick="showYear('second')">CSAI Year 2 📗</button>
+    <button class="btn" onclick="showYear('third')">CSAI Year 3 📗</button>
+  </div>
+
+  <!-- Foundation Year Container -->
+  <div class="container" id="foundation">
+    <h2>Foundation in Engineering 2024/2025 📐</h2>
+
+    <div class="semester">
+      <h3>April Sem 🌷</h3>
+      <ul>
+        <li><a href="pdfs/Foundation in Engineering 24-25/0 April Semester/ENGFF018 Light, Wave & Electrons.pdf" target="_blank">ENGFF018 Light, Wave & Electrons 🌊💡⚡</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/0 April Semester/ENGFF020 Principles of Chemistry.pdf" target="_blank">ENGFF020 Principles of Chemistry 🧪🧬</a></li>
+      </ul>
     </div>
+
+    <div class="semester">
+      <h3>Autumn Sem 🍁</h3>
+      <ul>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF013 Electricity and Magnetism.pdf" target="_blank">ENGFF013 Electricity and Magnetism ⚡🧲</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF033 Calculus.pdf" target="_blank">ENGFF033 Calculus 🧮📐</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF046(1) Mechanics and Matter.pdf" target="_blank">ENGFF046 Mechanics ⚙️🚀</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF046(2) Mechanics and Matter.pdf" target="_blank">ENGFF046 Matter 🔬🌡️</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF047(1) Mathematics for Engineers.pdf" target="_blank">ENGFF047 Mathematics for Engineers I 📊📈</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF047(2) Mathematics for Engineers.pdf" target="_blank">ENGFF047 Mathematics for Engineers II ➗📏</a></li>
+      </ul>
+    </div>
+
+    <div class="semester">
+      <h3>Spring Sem 🌸</h3>
+      <ul>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF015 Applications of Electromagnetism.pdf" target="_blank">ENGFF015 Applications of Electromagnetism ⚡🧲</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF040(1) Advanced Calculus_ Further Calculus.pdf" target="_blank">ENGFF040 Advanced Calculus - Further Calculus 🧮📐</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF040(2) Advanced Calculus_ Complex Numbers Numerical Solutions.pdf" target="_blank">ENGFF040 Complex Numbers & Numerical Solutions ⚙️🚀</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF041(1) Thermal Physics.pdf" target="_blank">ENGFF041 Thermal Physics 🔬🌡️</a></li>
+        <li><a href="pdfs/Foundation in Engineering 24-25/1 Autumn Semester/ENGFF041(2) Circular Motion.pdf" target="_blank">ENGFF041 Circular Motion 📊📈</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- First Year Container -->
+  <div class="container" id="first">
+    <h2>CSAI - First Year 📘</h2>
+    <p style="text-align:center;">Notes coming soon!</p>
+  </div>
+
+  
+  <!-- Second Year Container -->
+  <div class="container" id="second">
+    <h2>CSAI - Second Year 📗</h2>
+    <p style="text-align:center;">Notes coming soon!</p>
+  </div>
+
+  
+  <!-- Third Year Container -->
+  <div class="container" id="third">
+    <h2>CSAI - Third Year 📗</h2>
+    <p style="text-align:center;">Notes coming soon!</p>
+  </div>
+
+  <script>
+    function showYear(yearId) {
+      document.getElementById("landing").style.display = "none";
+      document.getElementById(yearId).style.display = "block";
+      window.scrollTo(0, 0);
+    }
+  </script>
 
 </body>
 </html>
